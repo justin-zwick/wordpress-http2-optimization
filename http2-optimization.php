@@ -60,3 +60,6 @@ new Module(
     array(),
     __FILE__
 );
+
+// load public functions in global scope
+require $plugin_path . '/includes/global.inc.php';

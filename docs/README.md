@@ -116,5 +116,5 @@ The configuration is a array of JSON objects. Each object is a asset to push and
 The following method can be used to push an asset from PHP.
 
 ```php
-\O10n::get('http2')->push('url','as','type');
+\O10n\push('url','as','type');
 ```

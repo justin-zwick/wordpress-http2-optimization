@@ -32,7 +32,7 @@ $module_version = $view->module->version();
 
 			<p class="about-text" style="min-height:inherit;">Getting started? Read <a href="https://developers.google.com/web/fundamentals/performance/http2/" target="_blank">this article</a> about HTTP/2 Optimization by Google. Test your server for HTTP/2 support <a href="https://tools.keycdn.com/http2-test?url=<?php print urlencode(home_url()); ?>" target="_blank" rel="noopener">here</a>.</p>
 
-			<p class="about-text" style="min-height:inherit;">If you are happy with the plugin, please consider to <a href="https://wordpress.org/support/plugin/above-the-fold-optimization/reviews/#new-post" target="_blank" rel="noopener">write a review</a> and <span class="star" style="display:inline-block;vertical-align:middle;"><a class="github-button" data-manual="1" data-size="large" href="https://github.com/bramstein/fontfaceobserver" data-icon="octicon-star" data-show-count="true" aria-label="Star bramstein/fontfaceobserver on GitHub">Star</a></span> on Github.</p>
+			<p class="about-text" style="min-height:inherit;">If you are happy with the plugin, please consider to <a href="https://wordpress.org/support/plugin/http2-optimization/reviews/#new-post" target="_blank" rel="noopener">write a review</a> and <span class="star" style="display:inline-block;vertical-align:middle;"><a class="github-button" data-manual="1" data-size="large" href="https://github.com/o10n-x/wordpress-http2-optimization" data-icon="octicon-star" data-show-count="true" aria-label="Star o10n-x/wordpress-http2-optimization on GitHub">Star</a></span> on Github.</p>
 			</div>
 
 		</div>
