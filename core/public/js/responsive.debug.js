@@ -1,0 +1,1 @@
+var Xb=m.matchMedia||m.P,Yb={};function Na(a){if(!Xb||!a)return!0;a in Yb||(Yb[a]=Xb(a));return Yb[a]}function Pa(a,c,b){function d(f){f.matches?(b||Yb[a].removeListener(d),e||(e=!0,c())):f.matches||(b&&!0===e&&b(),e=!1)}var e=!Xb||!a||Na(a).matches;e&&c();b&&a in Yb&&Yb[a].addListener(d)}z.media=Pa;
