@@ -16,7 +16,7 @@ Before you start using the plugin it is important to test your server for HTTP/2
 
 The configuration is a array of JSON objects. Each object is a asset to push and contains the required properties `url` and `as` and the optional properties `type` and `meta`.
 
-`url` is required and is the URI of the asset to push by the server. This can be a local file or a URL. When a external URL is pushed, the plugin adds `crossorigin` to the server push header.
+`url` is the URI of the asset to push by the server. This can be a local file or a URL. When a external URL is pushed, the plugin adds `crossorigin` to the server push header.
 
 `as` is the content type instruction for the HTTP/2 server. Mozilla reports the following possible values
 
