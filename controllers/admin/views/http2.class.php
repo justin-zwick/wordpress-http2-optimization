@@ -6,7 +6,7 @@ namespace O10n;
  *
  * @package    optimization
  * @subpackage optimization/controllers/admin
- * @author     o10n-x <info@optimization.team>
+ * @author     Optimization.Team <info@optimization.team>
  */
 if (!defined('ABSPATH')) {
     exit;
@@ -60,6 +60,21 @@ class AdminViewHttp2 extends AdminViewBase
 
         // enqueue scripts
         add_action('admin_enqueue_scripts', array( $this, 'enqueue_scripts' ), $this->first_priority);
+    }
+
+    /**
+     * Return help tab data
+     */
+    final public function help_tab()
+    {
+        $data = array(
+            'name' => __('HTTP/2 Optimization', 'o10n'),
+            'github' => 'https://github.com/o10n-x/wordpress-http2-optimization',
+            'wordpress' => 'https://wordpress.org/support/plugin/http2-optimization',
+            'docs' => 'https://github.com/o10n-x/wordpress-http2-optimization/tree/master/docs'
+        );
+
+        return $data;
     }
 
     /**

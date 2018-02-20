@@ -38,6 +38,10 @@ Documentation is available on [Github](https://github.com/o10n-x/wordpress-http2
 
 == Changelog ==
 
+= 0.0.2 =
+
+Core update (see changelog.txt)
+
 = 0.0.1 =
 
 Beta release. Please provide feedback on [Github forum](https://github.com/o10n-x/wordpress-http2-optimization/issues).
