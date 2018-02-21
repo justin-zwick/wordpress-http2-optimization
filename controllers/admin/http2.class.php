@@ -22,10 +22,9 @@ class AdminHttp2 extends ModuleAdminController implements Module_Admin_Controlle
             'title' => '<span class="dashicons dashicons-admin-home"></span>',
             'title_attr' => 'Intro'
         ),
-        'optimization' => array(
-            'title' => 'HTTP/2 Optimization',
-            'title_attr' => 'HTTP/2 Optimization',
-            'is_tab_of' => ''
+        'push' => array(
+            'title' => 'HTTP/2 Server Push',
+            'title_attr' => 'HTTP/2 Server Push'
         )
     );
     /**

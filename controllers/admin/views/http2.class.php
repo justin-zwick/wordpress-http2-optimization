@@ -102,8 +102,8 @@ class AdminViewHttp2 extends AdminViewBase
 
         $tab = (isset($_REQUEST['tab'])) ? trim($_REQUEST['tab']) : $this->default_tab_view;
         switch ($tab) {
-            case "optimization":
-                $view_key = 'http2';
+            case "push":
+                $view_key = 'http2-push';
             break;
             case "intro":
                 $view_key = 'http2-' . $tab;
@@ -125,11 +125,18 @@ class AdminViewHttp2 extends AdminViewBase
     {
         // HTTP/2 Optimization
 
-        $forminput->type_verify(array(
-            'http2.push.enabled' => 'bool',
-            'http2.push.list' => 'json-array',
-            'http2.push.meta' => 'bool',
-            'pwa.cache_digest' => 'bool'
-        ));
+        $tab = (isset($_REQUEST['tab'])) ? trim($_REQUEST['tab']) : 'o10n';
+
+        switch ($tab) {
+            case "push":
+
+                $forminput->type_verify(array(
+                    'http2.push.enabled' => 'bool',
+                    'http2.push.list' => 'json-array',
+                    'http2.push.meta' => 'bool',
+                    'pwa.cache_digest' => 'bool'
+                ));
+            break;
+        }
     }
 }
