@@ -46,7 +46,6 @@ new Module(
     $minimum_core_version,
     array(
         'core' => array(
-            'shutdown',
             'tools',
             'http',
             'http2'

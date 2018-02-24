@@ -1,33 +1,29 @@
 <?php
+namespace O10n;
 
 /**
  * Fired when the plugin is uninstalled.
  *
  * @link       https://github.com/o10n-x/
- * @since      2.5.0
- *
- * @package    o10n
+ * @package    optimization
  */
 
 if (! defined('WP_UNINSTALL_PLUGIN')) {
     exit;
 }
 
-// get O10N config
-$options = get_option('o10n', false);
+$plugin_path = dirname(__FILE__);
 
-// remove http/2 config
-if ($options) {
-    $param = 'http2.';
-
-    foreach ($options as $key => $value) {
-        if (strpos($key, $param) === 0) {
-            unset($options[$key]);
-        }
-    }
-
-    // remove empty options
-    if (empty($options)) {
-        delete_option('o10n');
-    }
+// load uninstall controller
+if (!class_exists('\O10n\Uninstall')) {
+    require $plugin_path . '/core/controllers/uninstall.php';
 }
+
+// start uninstaller
+$uninstaller = new Uninstall('http2');
+
+// delete settings
+$uninstaller->delete_settings('http2');
+
+// delete cache tables
+$uninstaller->delete_tables();
