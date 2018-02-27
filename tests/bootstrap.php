@@ -5,8 +5,8 @@ if (! $_tests_dir) {
     $_tests_dir = '/tmp/wordpress-tests-lib';
 }
 
-define('PLUGIN_NAME', 'web-font-optimization.php');
-define('PLUGIN_FOLDER', 'web-font-optimization');
+define('PLUGIN_NAME', 'http2-optimization.php');
+define('PLUGIN_FOLDER', 'http2-optimization');
 define('PLUGIN_PATH', PLUGIN_FOLDER.'/'.PLUGIN_NAME);
 
 // Activates this plugin in WordPress so it can be tested.
