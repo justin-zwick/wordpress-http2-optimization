@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/o10n-x/wordpress-http2-optimization.svg?branch=master)](https://travis-ci.org/o10n-x/wordpress-http2-optimization)
+
 # WordPress HTTP/2 Optimization
 
 Advanced HTTP/2 optimization toolkit. HTTP/2 Server Push, Service Worker based Cache-Digest and more.
