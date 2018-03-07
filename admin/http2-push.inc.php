@@ -33,7 +33,7 @@ $this->form_start(__('HTTP/2 Optimization', 'o10n'), 'http2');
 
             <h5 class="h">&nbsp;HTTP/2 Push List <a href="https://github.com/o10n-x/wordpress-http2-optimization/tree/master/docs#http2-configuration" target="_blank" title="HTTP/2 Server Push Configuration" style="top: -4px;position: relative;display: inline-block;text-decoration: none;"><span class="dashicons dashicons-editor-help"></span></a></h5>
             <div id="http2-push-list"><div class="loading-json-editor"><?php print __('Loading JSON editor...', 'o10n'); ?></div></div>
-            <input type="hidden" class="json" name="o10n[http2.push.list]" data-json-editor-compact="1" data-json-type="json-array" data-json-editor-height="auto" data-json-editor-init="1" value="<?php print esc_attr($json('http2.push.list')); ?>" />
+            <input type="hidden" class="json" name="o10n[http2.push.list]" data-json-editor-height="auto" data-json-type="json-array" data-json-editor-height="auto" data-json-editor-init="1" value="<?php print esc_attr($json('http2.push.list')); ?>" />
 
             <div class="info_yellow"><strong>Example:</strong> <code class="clickselect" title="<?php print esc_attr('Click to select', 'optimization'); ?>" style="cursor:copy;">{"url": "/wp-content/themes/theme-x/images/logo.png", "as": "image", "type": "image/png"}</code></div>
             

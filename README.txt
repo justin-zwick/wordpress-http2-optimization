@@ -5,7 +5,7 @@ Tags: http2, spdy, server push, push, service worker, cache digest, pwa
 Requires at least: 4.0
 Requires PHP: 5.4
 Tested up to: 4.9.4
-Stable tag: 0.0.9
+Stable tag: 0.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,11 @@ Documentation is available on [Github](https://github.com/o10n-x/wordpress-http2
 
 
 == Changelog ==
+
+= 0.0.10 =
+* Improved JSON editor config (auto height).
+* Improved Travis CI build test.
+* Added Ruby RSpec + Capybara unit tests.
 
 = 0.0.9 =
 Bugfix: settings link on plugin index.

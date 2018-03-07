@@ -93,7 +93,7 @@ class AdminHttp2 extends ModuleAdminController implements Module_Admin_Controlle
      */
     final public function settings_link($links)
     {
-        $settings_link = '<a href="'.esc_url(add_query_arg(array('page' => 'o10n-http2','tab' => 'optimization'), admin_url($this->admin_base))).'">'.__('Settings').'</a>';
+        $settings_link = '<a href="'.esc_url(add_query_arg(array('page' => 'o10n-http2','tab' => 'push'), admin_url($this->admin_base))).'">'.__('Settings').'</a>';
         array_unshift($links, $settings_link);
 
         return $links;

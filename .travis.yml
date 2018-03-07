@@ -30,4 +30,4 @@ before_script:
 
 script:
   - phpunit
-  - cd wp-tests/spec && bundle exec rspec test.rb
+  - cd tests/spec && bundle exec rspec test.rb
