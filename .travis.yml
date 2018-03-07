@@ -8,11 +8,11 @@ notifications:
   on_failure: change
 
 php:
-  - nightly
+  #- nightly
   - 7.0
-  - 5.6
-  - 5.5
-  - 5.4
+  #- 5.6
+  #- 5.5
+  #- 5.4
 
 env:
   - WP_PROJECT_TYPE=plugin WP_VERSION=latest WP_MULTISITE=0 WP_TEST_URL=http://localhost:12000 WP_TEST_USER=test WP_TEST_USER_PASS=test
@@ -20,6 +20,12 @@ env:
 matrix:
   allow_failures:
     - php: nightly
+
+addons:
+  artifacts:
+    s3_bucket: o10n
+    s3_region: "us-west-1"
+    working_dir: screenshots
 
 before_script:
   # Install composer packages before trying to activate themes or plugins
