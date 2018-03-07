@@ -116,7 +116,7 @@ describe "wordpress: #{uri}/ - ", :type => :request, :js => true do
         # enable cloudfront page cache
         find("input[name='o10n[http2.push.enabled]']").set(true)
 
-        fill_in "o10n[http2.push.list]", with: "[{\"url\":\"http:\\/\\/www.test.com\",\"as\":\"font\"}]"
+        first("input[name='o10n[http2.push.list]']", visible: false).set("[{\"url\":\"http:\\/\\/www.test.com\",\"as\":\"font\"}]")
 
         find("input[name='o10n[http2.push.meta]']").set(true)
 
