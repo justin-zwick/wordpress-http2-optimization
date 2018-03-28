@@ -41,6 +41,10 @@ class Http2 extends Controller implements Controller_Interface
      */
     protected function setup()
     {
+        if (!$this->env->is_optimization()) {
+            return;
+        }
+
         // HTTP/2 Server Push requires SSL
         $this->push_enabled = ($this->options->bool('http2.push.enabled') && $this->env->is_ssl());
         if ($this->push_enabled) {
@@ -65,6 +69,10 @@ class Http2 extends Controller implements Controller_Interface
      */
     public function push_headers($buffer)
     {
+        if (!$this->env->is_optimization()) {
+            return;
+        }
+        
         if (!$this->push_enabled || empty($this->push_list) || headers_sent()) {
             return;
         }
@@ -124,6 +132,10 @@ class Http2 extends Controller implements Controller_Interface
      */
     final public function add_meta()
     {
+        if (!$this->env->is_optimization()) {
+            return;
+        }
+        
         if (empty($this->push_list)) {
             return;
         }
@@ -162,6 +174,10 @@ class Http2 extends Controller implements Controller_Interface
      */
     final public function push($url, $as, $type = false, $filter = false, $isLocal = null)
     {
+        if (!$this->env->is_optimization()) {
+            return;
+        }
+        
         // push disabled
         if (!$this->push_enabled) {
             return false;
