@@ -88,6 +88,11 @@ class Http2 extends Controller implements Controller_Interface
                 continue;
             }
 
+            // sanitize URL
+            if (strpos($resource['url'], '<') !== false || strpos($resource['url'], '>') !== false) {
+                $resource['url'] = str_replace(array('<','>'), array('%3C','%3E'), $resource['url']);
+            }
+
             // push header
             $push_header = sprintf(
                 '<%s>; rel=preload; as=%s',
