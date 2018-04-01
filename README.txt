@@ -5,7 +5,7 @@ Tags: http2, spdy, server push, push, service worker, cache digest, pwa
 Requires at least: 4.0
 Requires PHP: 5.4
 Tested up to: 4.9.4
-Stable tag: 0.0.32
+Stable tag: 0.0.33
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,7 +37,7 @@ Documentation is available on [Github](https://github.com/o10n-x/wordpress-http2
 
 == Changelog ==
 
-= 0.0.32 =
+= 0.0.33 =
 * Improved: sanitize pushed URLs by URL encoding < and > characters.
 
 = 0.0.31 =
