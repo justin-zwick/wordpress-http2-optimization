@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/o10n-x/wordpress-http2-optimization.svg?branch=master)](https://travis-ci.org/o10n-x/wordpress-http2-optimization)
+[![Build Status](https://travis-ci.org/o10n-x/wordpress-http2-optimization.svg?branch=master)](https://travis-ci.org/o10n-x/wordpress-http2-optimization) ![Version](https://img.shields.io/github/release/o10n-x/wordpress-http2-optimization.svg)
 
 # WordPress HTTP/2 Optimization
 
