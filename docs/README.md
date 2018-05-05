@@ -1,6 +1,6 @@
-# HTTP/2 Optimization Documentation
+# Documentation
  
-This documentation belongs to the WordPress plugin [HTTP/2 Optimization](https://wordpress.org/plugins/http2-optimization/).
+Documentation for the WordPress plugin HTTP/2 Optimization.
 
 **The plugin is in beta. Please submit your feedback on the [Github forum](https://github.com/o10n-x/http2-optimization/issues).**
 
