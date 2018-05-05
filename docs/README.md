@@ -4,7 +4,7 @@ Documentation for the WordPress plugin HTTP/2 Optimization.
 
 **The plugin is in beta. Please submit your feedback on the [Github forum](https://github.com/o10n-x/http2-optimization/issues).**
 
-The plugin provides in a complete solution for HTTP/2 Server Push, using JSON based configuration and filters to dynamicly push assets. In partnership with the PWA Optimization plugin this plugin adds a Service Worker based Cache-Digest calculation to save data transfer by pushing only assets that are not already cached in the browser.
+The plugin provides in a complete solution for HTTP/2 Server Push, using JSON based configuration and filters to dynamicly push assets. In partnership with the [Service Worker / PWA Optimization](https://github.com/o10n-x/wordpress-pwa-optimization) plugin this plugin adds a Service Worker based Cache-Digest calculation to save data transfer by pushing only assets that are not already cached in the browser.
 
 Additional features can be requested on the [Github forum](https://github.com/o10n-x/http2-optimization/issues).
 
