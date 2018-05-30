@@ -41,7 +41,7 @@ class Http2 extends Controller implements Controller_Interface
      */
     protected function setup()
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('http2')) {
             return;
         }
 
@@ -69,7 +69,7 @@ class Http2 extends Controller implements Controller_Interface
      */
     public function push_headers($buffer)
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('http2')) {
             return;
         }
         
@@ -137,7 +137,7 @@ class Http2 extends Controller implements Controller_Interface
      */
     final public function add_meta()
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('http2')) {
             return;
         }
         
@@ -179,7 +179,7 @@ class Http2 extends Controller implements Controller_Interface
      */
     final public function push($url, $as, $type = false, $filter = false, $isLocal = null)
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('http2')) {
             return;
         }
         
