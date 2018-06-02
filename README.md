@@ -11,7 +11,7 @@ Advanced HTTP/2 optimization toolkit. HTTP/2 Server Push, Service Worker based C
 
 ![Github Updater](https://github.com/afragen/github-updater/raw/develop/assets/GitHub_Updater_logo_small.png)
 
-
+This plugin can be installed and updated using [Github Updater](https://github.com/afragen/github-updater) ([installation instructions](https://github.com/afragen/github-updater/wiki/Installation))
 
 <details/>
   <summary>Installation instructions</summary>
