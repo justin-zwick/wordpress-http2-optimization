@@ -12,7 +12,7 @@ namespace O10n;
  * @wordpress-plugin
  * Plugin Name:       HTTP/2 Optimization
  * Description:       Advanced HTTP/2 optimization toolkit. HTTP/2 Server Push, Service Worker based Cache-Digest and more.
- * Version:           0.0.51
+ * Version:           0.0.52
  * Author:            Optimization.Team
  * Author URI:        https://optimization.team/
  * GitHub Plugin URI: https://github.com/o10n-x/wordpress-http2-optimization
@@ -30,12 +30,12 @@ if (defined('WP_INSTALLING') && WP_INSTALLING) {
 }
 
 // settings
-$module_version = '0.0.51';
+$module_version = '0.0.52';
 $minimum_core_version = '0.0.44';
 $plugin_path = dirname(__FILE__);
 
 // load the optimization module loader
-if (!class_exists('\O10n\Module')) {
+if (!class_exists('\O10n\Module', false)) {
     require $plugin_path . '/core/controllers/module.php';
 }
 
