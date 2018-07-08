@@ -45,6 +45,20 @@ class Http2 extends Controller implements Controller_Interface
             return;
         }
 
+        // setup on WordPress init hook
+        add_action('init', array($this, 'init_setup'), PHP_INT_MAX);
+    }
+
+    /**
+     * Setup controller on WordPress init
+     */
+    final public function init_setup()
+    {
+        // disabled
+        if (!$this->env->enabled('http2')) {
+            return;
+        }
+
         // HTTP/2 Server Push requires SSL
         $this->push_enabled = ($this->options->bool('http2.push.enabled') && $this->env->is_ssl());
         if ($this->push_enabled) {
