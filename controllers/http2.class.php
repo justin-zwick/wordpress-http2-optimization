@@ -95,7 +95,7 @@ class Http2 extends Controller implements Controller_Interface
         $push_headers = array();
         $header_index = 0;
         $header_count = 0;
-        $resources_per_header = 50;
+        $resources_per_header = apply_filters('o10n_http2_assets_per_header', 50);
 
         foreach ($this->push_list as $resource) {
             if (!is_array($resource) || !isset($resource['url']) || !isset($resource['as'])) {
